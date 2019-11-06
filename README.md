@@ -38,3 +38,11 @@
 ### Association
 - belongs_to :group
 - belongs_to :user
+
+## imagesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|image|string||
+|message_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :message
