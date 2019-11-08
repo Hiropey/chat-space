@@ -2,6 +2,8 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+$white: #FFFFFF;
+
 .chat-side {
   width: 300px;
   color: white;
@@ -23,7 +25,7 @@
       .side-header__box__user-name {
         font-size: 16px;
         font-weight: bold;
-        color: #ffffff;
+        color: $white;
         text-align: center;
         margin: 0;
         padding: 0;
@@ -46,13 +48,14 @@
         .side-header__box__menu__new-group {
 
           .fa-edit:before, .fa-pencil-square-o:before {
+            color: $white;
             content: "\f044";
           }
         }
         .side-header__box__menu__edit-user {
           margin-left: 0.3rem;
           .fa-cog {
-            color: #ffffff;
+            color: $white;
           }
         }
       }
@@ -73,13 +76,13 @@
         font-size: 15px;
         margin-bottom: 5px;
         font-weight: bold;
-        color: #ffffff;
+        color: $white;
       }
         
       .group__latest-message {
         font-size: 11px;
         font-weight: bold;
-        color: #ffffff
+        color: $white
       }
   
     }
@@ -201,7 +204,7 @@
       padding: 0 30px;
       margin-left: 15px;
       background-color: #38aef0;
-      color: white;
+      color: $white;
       cursor: pointer;
     }
   }
