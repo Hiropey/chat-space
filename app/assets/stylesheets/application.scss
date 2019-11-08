@@ -16,13 +16,13 @@ $white: #FFFFFF;
     align-items: center;
     padding: 0 20px;
 
-    .side-header__box {
+    &__box {
       display: flex;
       justify-content: space-between;
       width: 100%;
       font-weight: bold;
 
-      .side-header__box__user-name {
+      &__user-name {
         font-size: 16px;
         font-weight: bold;
         color: $white;
@@ -36,7 +36,7 @@ $white: #FFFFFF;
         margin-inline-end: 0px;
 
 
-      .side-header__box__menu {
+      &__menu {
         display: flex;
         list-style: none;
         margin-block-start: 1em;
@@ -45,7 +45,7 @@ $white: #FFFFFF;
         margin-inline-end: 0px;
         padding-inline-start: 40px;
 
-        .side-header__box__menu__new-group {
+        &__new-group {
 
           .fa-edit .fa-pencil-square-o
             &:before {
@@ -53,7 +53,7 @@ $white: #FFFFFF;
             content: "\f044";
           }
         }
-        .side-header__box__menu__edit-user {
+        &__edit-user {
           margin-left: 0.3rem;
           .fa-cog {
             color: $white;
@@ -73,14 +73,14 @@ $white: #FFFFFF;
       margin-bottom: 40px;
       padding: 0 20px;
       
-      .group__group-name {
+      &__group-name {
         font-size: 15px;
         margin-bottom: 5px;
         font-weight: bold;
         color: $white;
       }
         
-      .group__latest-message {
+      &__latest-message {
         font-size: 11px;
         font-weight: bold;
         color: $white
@@ -105,26 +105,26 @@ $white: #FFFFFF;
     border-bottom: solid 1px #eee;
     overflow: scroll;
 
-    .main-header__left-box {
+    &__left-box {
       margin-top: 35px;
 
-      .main-header__left-box__current-group {
+      &__current-group {
         font-size: 20px;
         color: #333;
         margin-bottom: 15px
       }
         
-      .main-header__left-box__member-list {
+      &__member-list {
         display: flex;
         font-size: 12px;
         color: #999999;
 
-        .main-header__left-box__member-list__member {
+        &__member {
         }
       }
     }
 
-    .main-header__edit-btn {
+    &__edit-btn {
       height: 40px;
       line-height: 40px;
       padding: 0 20px;
@@ -146,23 +146,23 @@ $white: #FFFFFF;
     .message {
       padding-bottom: 40px;
 
-      .message__upper-info {
+      &__upper-info {
         display: flex;
         margin-bottom: 10px;
 
-        .message__upper-info__talker {
+        &__talker {
           color: #434a54;
           font-size: 16px;
           font-weight: bold;
         }
           
-        .message__upper-info__date {
+        &__date {
           color: #999999;
           font-size: 12px;
           margin-left: 10px;
         }
       }
-      .message__text {
+      &__text {
         color: #434a54;
         font-size: 14px;
         margin-bottom: 10px;
@@ -192,10 +192,8 @@ $white: #FFFFFF;
           cursor: pointer;
 
           .fa .fa-image {
-
-            .input-box__image {
-              display: none;
-            }
+            display: none;
+            
           }
         }
       }
