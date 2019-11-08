@@ -1,0 +1,20 @@
+.chat-side
+  .side-header
+    .side-header__box
+      %p.side-header__box__user-name
+        ユーザー名
+      %ul.side-header__box__menu
+        %li.side-header__box__menu__new-group
+          %a{ :href => "#" } 
+            %i.fa.fa-edit
+        %li.side-header__box__menu__edit-user
+          %a{ :href => "#" }
+            %i.fa.fa-cog
+            
+  .groups
+    %a{ :href => "#" }
+      .group
+        %p.group__group-name
+          グループ名
+        %p.group__latest-message
+          まだメッセージはありません
