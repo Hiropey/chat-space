@@ -47,7 +47,8 @@ $white: #FFFFFF;
 
         .side-header__box__menu__new-group {
 
-          .fa-edit:before, .fa-pencil-square-o:before {
+          .fa-edit .fa-pencil-square-o
+            &:before {
             color: $white;
             content: "\f044";
           }
@@ -181,6 +182,7 @@ $white: #FFFFFF;
         padding: 0 40px 0 10px;
         color: #434a54;
         border-style: none;
+        position: relative;
 
         .input-box__image {
           font-size: 1.3rem;

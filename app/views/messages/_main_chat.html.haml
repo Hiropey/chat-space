@@ -7,8 +7,8 @@
         Member：なし
         %li.main-header__left-box__member-list__member
           ユーザー名
-    %a.main-header__edit-btn{ :href => "#" }
-      Edit
+    .main-header__edit-btn{ href: "#" }
+      = link_to 'Edit', '#'
             
   .messages
     .message
@@ -32,8 +32,8 @@
 
   .form
     .input-box
-      %input.input-box__text{:placeholder => "type a message"}
+      %input.input-box__text{ placeholder: "type a message" }
         %label.input-box__image
           %i.fa.fa-image
-            %input.input-box__image__file{ :type => "file" }
-    %input.submit-btn{ :type => "submit", :name => "commit", :value => "Send" }
+            %input.input-box__image__file{ type: "file" }
+    %input.submit-btn{ type: "submit", name: "commit", value: "Send" }
