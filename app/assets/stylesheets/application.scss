@@ -1,6 +1,9 @@
 @import "./reset";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "./colors";
+@import "./flash";
+
 
 $white: #FFFFFF;
 
@@ -46,8 +49,9 @@ $white: #FFFFFF;
         padding-inline-start: 40px;
 
         &__new-group {
+          display: flex;
 
-          .fa-edit .fa-pencil-square-o
+          .fa-edit 
             &:before {
             color: $white;
             content: "\f044";
