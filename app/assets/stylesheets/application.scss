@@ -3,6 +3,7 @@
 @import "font-awesome";
 @import "./colors";
 @import "./flash";
+@import "./group";
 
 
 $white: #FFFFFF;
@@ -49,17 +50,12 @@ $white: #FFFFFF;
         padding-inline-start: 40px;
 
         &__new-group {
-          display: flex;
-
-          .fa-edit 
-            &:before {
+          .icon {
             color: $white;
-            content: "\f044";
           }
         }
         &__edit-user {
-          margin-left: 0.3rem;
-          .fa-cog {
+          .icon {
             color: $white;
           }
         }
