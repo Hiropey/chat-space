@@ -125,14 +125,17 @@ $white: #FFFFFF;
     }
 
     &__edit-btn {
-      height: 40px;
-      line-height: 40px;
-      padding: 0 20px;
-      margin-top: 30px;
-      border: solid 1px #38aef0;
-      position: absolute;
-      right: 40px;
-      color: #38aef0
+      
+      .edit-btn {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        margin-top: 30px;
+        border: solid 1px #38aef0;
+        position: absolute;
+        right: 40px;
+        color: #38aef0
+      }
     }
   }
 
@@ -174,8 +177,10 @@ $white: #FFFFFF;
     height: 90px;
     padding: 20px 40px;
     background-color: #ddd;
-    display: flex;
 
+    .input-box {
+      display: flex;
+    }
       .input-box__text {
         height: 50px;
         width: 100%;
@@ -185,6 +190,7 @@ $white: #FFFFFF;
         position: relative;
 
         .input-box__image {
+          display: none;
           font-size: 1.3rem;
           position: absolute;
           top: 10px;
@@ -192,7 +198,9 @@ $white: #FFFFFF;
           cursor: pointer;
 
           .fa .fa-image {
-            display: none;
+            .input-box__image__file {
+              display: none;
+            }
             
           }
         }
@@ -207,5 +215,6 @@ $white: #FFFFFF;
       color: $white;
       cursor: pointer;
     }
+
   }
 }
