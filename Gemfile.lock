@@ -212,7 +212,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 4.2)
   devise
-  font-awesome-sass (~> 5.11.2)
+  font-awesome-sass
   haml-rails
   jbuilder (~> 2.5)
   jquery-rails

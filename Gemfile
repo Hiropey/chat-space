@@ -54,7 +54,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'haml-rails'
 
-gem 'font-awesome-sass', '~> 5.11.2'
+gem 'font-awesome-sass'
 
 gem 'devise'
 
