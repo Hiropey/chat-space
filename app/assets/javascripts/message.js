@@ -1,46 +1,26 @@
 $(function(){ 
   function buildHTML(message){
-   if ( message.image ) {
-     var content = message.image
-     var html =
-      `<div class="message" data-message-id=${message.id}>
-         <div class="message__upper-info">
-           <div class="message__upper-info__talker">
-             ${message.user_name}
-           </div>
-           <div class="message__upper-info__date">
-             ${message.date}
-           </div>
-         </div>
-         <div class="lower-message">
-           <p class="lower-message__text">
-             ${message.content}
-           </p>
-         </div>
-         <img class="lower-message__image" src='content'>
-       </div>`
-     return html;
-   } else {
-     var text = ''
-     var html =
-      `<div class="message" data-message-id=${message.id}>
-         <div class="message__upper-info">
-           <div class="message__upper-info__talker">
-             ${message.user_name}
-           </div>
-           <div class="message__upper-info__date">
-             ${message.date}
-           </div>
-         </div>
-         <div class="lower-message">
-           <p class="lower-message__text">
-             ${message.content}
-           </p>
-         </div>
-         <p src='content'>
-       </div>`
-     return html;
-   };
+    
+    var html =
+    `<div class="message" data-message-id=${message.id}>
+        <div class="message__upper-info">
+          <div class="message__upper-info__talker">
+            ${message.user_name}
+          </div>
+          <div class="message__upper-info__date">
+            ${message.date}
+          </div>
+        </div>
+        <div class="lower-message">
+          <p class="lower-message__text">
+            ${message.content}
+          </p>
+        </div>
+        <script>
+          var image = message.image ? <img /> : "";
+        </script>
+      </div>`
+    return html;
  }
 $('#new_message').on('submit', function(e){
  e.preventDefault();
