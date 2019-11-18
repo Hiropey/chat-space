@@ -165,7 +165,7 @@ $white: #FFFFFF;
           margin-left: 10px;
         }
       }
-      &__text {
+      .lower-message__text {
         color: #434a54;
         font-size: 14px;
         margin-bottom: 10px;
@@ -180,8 +180,8 @@ $white: #FFFFFF;
 
     .input-box {
       display: flex;
-    }
-      .input-box__text {
+
+      &__text {
         height: 50px;
         width: 100%;
         padding: 0 40px 0 10px;
@@ -189,32 +189,28 @@ $white: #FFFFFF;
         border-style: none;
         position: relative;
 
-        .input-box__image {
-          display: none;
+        &__image {
           font-size: 1.3rem;
-          position: absolute;
           top: 10px;
           right: 10px;
           cursor: pointer;
-
-          .fa .fa-image {
-            .input-box__image__file {
+          
+          .form__mask__image {
+            .icon {
               display: none;
             }
-            
           }
         }
       }
-
-    .submit-btn {
-      width: 100px;
-      height: 50px;
-      padding: 0 30px;
-      margin-left: 15px;
-      background-color: #38aef0;
-      color: $white;
-      cursor: pointer;
+      .submit-btn {
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: $white;
+        cursor: pointer;
+      }
     }
-
   }
 }
