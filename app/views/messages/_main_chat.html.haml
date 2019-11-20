@@ -13,7 +13,7 @@
         .edit-btn
           Edit
             
-  .messages
+  .messages{data: {groupid: @group.id}}
     = render partial: 'message', collection: @messages
 
   .form
