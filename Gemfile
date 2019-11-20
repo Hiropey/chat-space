@@ -13,8 +13,8 @@ gem 'mysql2', '>= 0.3.18', '< 0.6.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
-# gem 'sass-rails', '~> 5.0'
-gem 'sassc-rails'
+gem 'sass-rails', '~> 5.0'
+# gem 'sassc-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -59,7 +59,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'haml-rails'
 
-gem 'font-awesome-sass', '~> 5.11.2'
+gem 'font-awesome-sass'
 
 gem 'devise'
 
