@@ -38,28 +38,20 @@ $white: #FFFFFF;
         margin-block-end: 1em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-
-
-      &__menu {
-        display: flex;
-        list-style: none;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        padding-inline-start: 40px;
-
-        &__new-group {
-          .icon {
-            color: $white;
-          }
-        }
-        &__edit-user {
-          .icon {
-            color: $white;
-          }
-        }
       }
+
+      .side-header__box__menu {
+        display: inline-block;
+        float: right;
+        .list {
+          display: inline-block;
+          a {
+            color: white;
+            .icon {
+              color: $white;
+            }
+          }
+        }
       }
     }
   }
@@ -140,7 +132,7 @@ $white: #FFFFFF;
   }
 
   .messages {
-    height: calc(100vh - 320px);
+    height: calc(100vh - 280px);
     padding: 46px 40px;
     background-color: #fafafa;
     overflow: scroll;
@@ -174,42 +166,50 @@ $white: #FFFFFF;
   }
 
   .form {
+    background-color: #DDDDDD;
+    box-sizing: border-box;
     height: 90px;
-    padding: 20px 40px;
-    background-color: #ddd;
+    padding: 20px 50px 20px 40px;
+    .form__message {
+      border: none;
+      float: left;
+      height: 50px;
+      width: calc(100% - 150px);
 
-    .input-box {
-      display: flex;
-
-      &__text {
+      .input-box__text {
+        border: none;
+        float: left;
         height: 50px;
-        width: 100%;
-        padding: 0 40px 0 10px;
-        color: #434a54;
-        border-style: none;
-        position: relative;
-
-        &__image {
-          font-size: 1.3rem;
-          top: 10px;
-          right: 10px;
-          cursor: pointer;
-          
-          .form__mask__image {
-            .icon {
-              display: none;
-            }
-          }
-        }
+        width: calc(100% - 150px);
       }
+      .input-box__image {
+        font-size: 20px;
+        line-height: 50px;
+      }
+    }
+    .form__mask__image {
+      background-color: $white;
+      float: left;
+      height: 50px;
+      padding-right: 10px;
+      // .icon {
+      //   font-size: 20px;
+      //   line-height: 50px;
+      // }
+      .hidden {
+        display: none;
+      }
+    }
+    .form__btn {
       .submit-btn {
-        width: 100px;
-        height: 50px;
-        padding: 0 30px;
-        margin-left: 15px;
-        background-color: #38aef0;
+        background-color: $light_blue;
+        border: none;
         color: $white;
-        cursor: pointer;
+        float: right;
+        font-size: 16px;
+        height: 50px;
+        margin-left: 15px;
+        padding: 0 30px;
       }
     }
   }
