@@ -175,6 +175,7 @@ $white: #FFFFFF;
       float: left;
       height: 50px;
       width: calc(100% - 150px);
+      position: relative;
 
       .input-box__text {
         border: none;
@@ -189,13 +190,13 @@ $white: #FFFFFF;
       float: left;
       height: 50px;
       padding-right: 10px;
-      .icon {
-        font-size: 20px;
-        line-height: 50px;
-      }
-      .hidden {
-        display: none;
-      }
+        .icon {
+          font-size: 20px;
+          line-height: 50px;
+        }
+        .hidden {
+          display: none;
+        }
       }
       .submit-btn {
         background-color: $light_blue;
@@ -206,6 +207,8 @@ $white: #FFFFFF;
         height: 50px;
         margin-left: 15px;
         padding: 0 30px;
+        position: absolute;
+        right: 0;
       }
     }
   }
