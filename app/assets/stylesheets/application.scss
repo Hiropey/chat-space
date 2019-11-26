@@ -174,7 +174,7 @@ $white: #FFFFFF;
       border: none;
       float: left;
       height: 50px;
-      width: calc(100% - 150px);
+      width: calc(100% - 10px);
       position: relative;
 
       .input-box__text {
@@ -189,7 +189,7 @@ $white: #FFFFFF;
       background-color: $white;
       float: left;
       height: 50px;
-      padding-right: 10px;
+      padding: 0 10px 0 10px;
         .icon {
           font-size: 20px;
           line-height: 50px;
